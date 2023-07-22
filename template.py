@@ -3,11 +3,13 @@ from pathlib import Path
 import logging
 
 while True:
-    project_name = input("Enter your project name ")
+    project_name = input("Enter your project name: ")
     if project_name != "":
         break
 
 # src/__init__.py
+# src/components/__init__.py
+
 
 list_of_files = [
     f"{project_name}/__init__.py",
@@ -17,9 +19,9 @@ list_of_files = [
     f"{project_name}/entity/__init__.py",
     f"{project_name}/exception/__init__.py",
     f"{project_name}/logger/__init__.py",
-    f"{project_name}/pipiline/__init__.py",
+    f"{project_name}/pipeline/__init__.py",
     f"{project_name}/utils/__init__.py",
-    f"confif/config.yml",
+    f"config/config.yml",
     "schema.yml",
     "app.py",
     "logs.py",
